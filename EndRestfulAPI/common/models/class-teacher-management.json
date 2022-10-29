@@ -1,0 +1,22 @@
+{
+  "name": "ClassTeacherManagement",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "teacherID": {
+      "type": "number",
+      "required": true
+    },
+    "classID": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Teacher",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "teacherID": {
+      "type": "number",
+      "required": true
+    },
+    "teacherName": {
+      "type": "string",
+      "required": true
+    },
+    "salary": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "classTeacherManagements": {
+      "type": "hasMany",
+      "model": "ClassTeacherManagement",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

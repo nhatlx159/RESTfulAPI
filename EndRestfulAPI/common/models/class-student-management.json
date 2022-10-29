@@ -1,0 +1,22 @@
+{
+  "name": "ClassStudentManagement",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "studentID": {
+      "type": "number",
+      "required": true
+    },
+    "classID": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

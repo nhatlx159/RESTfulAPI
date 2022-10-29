@@ -1,0 +1,43 @@
+{
+  "name": "Student",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "studentID": {
+      "type": "number",
+      "required": true
+    },
+    "studentName": {
+      "type": "string",
+      "required": true
+    },
+    "birthday": {
+      "type": "date",
+      "required": true
+    },
+    "GPA": {
+      "type": "number",
+      "required": true
+    },
+    "studyFee": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "classStudentManagements": {
+      "type": "hasMany",
+      "model": "ClassStudentManagement",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
